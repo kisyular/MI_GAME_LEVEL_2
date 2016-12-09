@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Roller Madness</title>
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+    <script src="TemplateData/UnityProgress.js"></script>
+  </head>
+  <body class="template">
+    <p class="header"><span>Unity WebGL Player | </span>Roller Madness</p>
+    <div class="template-wrap clear">
+      <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="1080px"></canvas>
+      <br>
+      <div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
+      <div style="color: yellow" class="title">Roller Madness</div>
+    </div>
+    
+    <script type='text/javascript'>
+  var Module = {
+    TOTAL_MEMORY: 268435456,
+    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+    compatibilitycheck: null,
+    dataUrl: "Release/WebGL.data",
+    codeUrl: "Release/WebGL.js",
+    memUrl: "Release/WebGL.mem",
+    
+  };
+</script>
+<script src="Release/UnityLoader.js"></script>
+      <div style="width: 100%; margin-top: 800px; background-color:#000000">
+          <ul style="color: #00f5ff; margin-left: 50px;"><strong>Modifications</strong>
+              <br>
+              Name: Rellika Kisyula
+              <li>Added The Start Screen in which user can click PLAY to play a game or INSTRUCTIONS to read the play instructions</li>
+              <li>Changed the texture of the floor to carpet for three floors and added WALLS in LEVEL 2</li>
+              <li>Changed danger zone into fire on both 2 sides and if the ball touches the fire, the game ends</li>
+              <li>Build a third floor in LEVEL 2 such that if the user wants to escape the enemies can climb their and try to avoid lesser number of enemies</li>
+              <li>Added more difficulty in LEVEL 1 and 2 by more bumbers</li>
+              <li>Made it possible for the USER to SKIP LEVEL 1 by clicking the SKIP BUTTON</li>
+              <li>Added more BUTTONS to make the game interactive, eg NEXT LEVEL, RETRY LEVEL</li>
+          </ul>
+      </div>
+  </body>
+</html>
